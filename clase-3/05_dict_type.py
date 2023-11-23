@@ -14,6 +14,6 @@ class MiDiccionario(dict):
         super().__setitem__(k, v)
 
 conf = ConfigParser(dict_type=MiDiccionario)
-conf.read("dict_type.ini")
+conf.read("05_dict_type.ini")
 
 print(conf["general"]["textsize0"])
