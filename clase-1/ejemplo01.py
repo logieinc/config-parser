@@ -4,7 +4,6 @@
 
 """
 import configparser
-import os
 
 config = configparser.ConfigParser()
 config.read("ejemplo01.ini", 'utf-8')
