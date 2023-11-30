@@ -15,7 +15,7 @@ import datetime
 from configparser import ConfigParser
 import re
 
-class CaseInsensitiveDict(dict):
+class MiDicionario(dict):
 
     # Pattern date time
     patternISO8601 = re.compile(
@@ -24,10 +24,10 @@ class CaseInsensitiveDict(dict):
     # Pattern first last name
     patternFirstLastName = re.compile(r"(?P<first_name>\w+) (?P<last_name>\w+)")
     def __setitem__(self, key, value):
-        super(CaseInsensitiveDict, self).__setitem__(key.lower(), value)
+        super(MiDicionario, self).__setitem__(key.lower(), value)
 
     def __getitem__(self, key):
-        valor = super(CaseInsensitiveDict, self).__getitem__(key.lower())
+        valor = super(MiDicionario, self).__getitem__(key.lower())
         if not isinstance(valor, str):
             return valor
         if self.patternISO8601.match(valor):
@@ -39,7 +39,7 @@ class CaseInsensitiveDict(dict):
         return valor
 
     def __contains__(self, key):
-        return super(CaseInsensitiveDict, self).__contains__(key.lower())
+        return super(MiDicionario, self).__contains__(key.lower())
 
 
 def print_config(config):
@@ -52,7 +52,7 @@ def print_config(config):
             print(f"{option} = {value} -> {type(value)}")
         print()  # Agregar una línea en blanco entre secciones
 
-parser = ConfigParser(interpolation=None, dict_type=CaseInsensitiveDict)
+parser = ConfigParser(interpolation=None, dict_type=MiDicionario)
 parser.read('dict_type_03.ini')
 
 print_config(parser)
