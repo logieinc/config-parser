@@ -29,6 +29,7 @@ print("")
 print("------------ SECTCRE re-configurado ---------------")
 custom.SECTCRE = re.compile(r"\[ *(?P<header>[^]]+?) *\]")
 custom.read_string(config)
-print(custom.sections())
-
+# print(custom.sections())
+# print(typical.get('Section 2','another'))
+print(custom.get('Section 2','another'))
 

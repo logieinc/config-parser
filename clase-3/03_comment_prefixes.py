@@ -2,6 +2,7 @@ import configparser
 
 
 config = configparser.ConfigParser(comment_prefixes=[';', '#', '%'])
+# config = configparser.ConfigParser(comment_prefixes=[';', '#'])
 config.read("03_comment_prefixes.ini")
 
 print()

@@ -2,6 +2,7 @@ import configparser
 
 
 config = configparser.ConfigParser(delimiters=['=', ':', '@', '>'])
+# config = configparser.ConfigParser(delimiters=['=', ':', '@'])
 config.read("02_delimiters.ini")
 
 print()

@@ -4,7 +4,7 @@ import configparser
 
 
 config = configparser.ConfigParser()
-config.optionxform = lambda x: x.lower()
+config.optionxform = lambda x: x.upper()
 
 config.read("optionxform.ini")
 

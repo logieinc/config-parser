@@ -10,10 +10,22 @@ parser.read_dict({'section1': {'key1': 'value1',
                   'section3': {'foo': 'x',
                                'bar': 'y',
                                'baz': 'z'}
-})
+                  })
 
 print()
 print(parser.sections())
 print()
-print([option for option in parser['section2']])
+for clave in parser.sections():
+    for option in parser.options(clave):
+        print(clave, option)
+# print([option for option in parser['section2']])
 
+parser.read("05_dict_type.ini")
+
+print()
+print(parser.sections())
+print()
+# print([option for option in parser['section2']])
+for clave in parser.sections():
+    for option in parser.options(clave):
+        print(clave, option)

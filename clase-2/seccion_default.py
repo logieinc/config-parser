@@ -17,8 +17,8 @@ for opcion, valor in configuracion['DEFAULT'].items():
 
 print("------------ Seccion General ---------------")
 # Mostrar opciones y sus valores de General
-for opcion, valor in configuracion['General'].items():
-    print (opcion, ":", valor)
+for opcion in configuracion.items('General'):
+    print (opcion)
 
 
 

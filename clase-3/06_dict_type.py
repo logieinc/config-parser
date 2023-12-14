@@ -27,6 +27,7 @@ class CaseInsensitiveDict(MutableMapping):
 
 
 parser = ConfigParser(dict_type=CaseInsensitiveDict)
+# parser = ConfigParser()
 parser.read('06_dict_type.ini')
 
 print()

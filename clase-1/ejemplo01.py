@@ -10,3 +10,5 @@ config.read("ejemplo01.ini", 'utf-8')
 
 print(config["DEFAULT"]["ServerAliveInterval"])
 print(config.get('DEFAULT', 'ServerAliveInterval'))
+print(config.get('BASE DE DATOS', 'ServerAliveInterval'))
+
