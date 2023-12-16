@@ -41,10 +41,6 @@ class YamlConfigParser(configparser.ConfigParser):
 parser = YamlConfigParser()
 parser.read_yaml('config.yaml')
 
-# print(parser.get("aplicacion", "nombre"))
-# print(parser.get("aplicacion", "entorno"))
-# print(parser.get("aplicacion", "version"))
-
 with open("config.ini", "w") as f:
     parser.write(f)
 

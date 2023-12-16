@@ -1,0 +1,17 @@
+{
+  "section": {
+    "keyA": "valueA",
+    "key": "valueB",
+    "keyC": "valueC"
+  },
+  "section1": {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+  },
+  "section3": {
+    "ba": "y",
+    "baz": "z",
+    "foo": "x"
+  }
+}
