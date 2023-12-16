@@ -15,6 +15,15 @@ def to_str(value):
     else:
         return value
 
+def print_config(config):
+    # Imprimir todas las secciones y opciones
+    print()
+    for section in config.sections():
+        print(f"[{section}]")
+        for option in config.options(section):
+            value = config.get(section, option)
+            print(f"{option} = {value} -> {type(value)}")
+        print()  # Agregar una línea en blanco entre secciones
 
 class YamlConfigParser(configparser.ConfigParser):
 
@@ -32,9 +41,11 @@ class YamlConfigParser(configparser.ConfigParser):
 parser = YamlConfigParser()
 parser.read_yaml('config.yaml')
 
-print(parser.get("aplicacion", "nombre"))
-print(parser.get("aplicacion", "entorno"))
-print(parser.get("aplicacion", "version"))
+# print(parser.get("aplicacion", "nombre"))
+# print(parser.get("aplicacion", "entorno"))
+# print(parser.get("aplicacion", "version"))
 
 with open("config.ini", "w") as f:
     parser.write(f)
+
+print_config(parser)
