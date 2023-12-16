@@ -1,0 +1,37 @@
+---
+# Configuración de la aplicación
+aplicacion:
+  nombre: Mi aplicación
+  version: 1.0
+  entorno: desarrollo
+
+# Configuración del servidor
+servidor:
+  host: localhost
+  puerto: 8080
+
+# Configuración de la base de datos
+base_de_datos:
+  tipo: mysql
+  host: localhost
+  puerto: 3306
+  nombre: mi_base_de_datos
+  usuario: mi_usuario
+  contrasena: mi_contrasena
+
+# Configuración de los usuarios
+usuarios:
+  - nombre: Juan Pérez
+    edad: 30
+    sexo: masculino
+    hobbies:
+      - programación
+      - lectura
+      - deporte
+  - nombre: María López
+    edad: 25
+    sexo: femenino
+    hobbies:
+      - música
+      - baile
+      - pintura

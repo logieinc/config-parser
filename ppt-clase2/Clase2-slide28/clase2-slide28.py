@@ -7,7 +7,7 @@ config = configparser.ConfigParser()
 
 default_config_path = 'default.cfg'
 site_config_path = 'site.cfg'
-user_config_path = os.path.expanduser('~/PycharmProjects/config-parser/ppt/Clase2-slide28/myapp.cfg')
+user_config_path = os.path.expanduser('/ppt-clase2/Clase2-slide28/myapp.cfg')
 
 with open(default_config_path, 'r', encoding='cp1250') as default_config_file:
     config.read_file(default_config_file)

@@ -1,0 +1,6 @@
+{
+  "nombre": "Juan Pérez",
+  "edad": 30,
+  "sexo": "masculino",
+  "hobbies": ["programación", "lectura", "deporte"]
+}

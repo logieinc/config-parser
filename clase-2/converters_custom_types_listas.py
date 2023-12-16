@@ -6,7 +6,7 @@ from configparser import ConfigParser
 # cp = ConfigParser(converters=converter)
 
 
-config = ConfigParser(converters={'lista': lambda x: [i.strip() for i in x.split(',')],
+config = ConfigParser(converters={'lista': lambda x: x.split(','),
                                   'list': lambda x: [i.strip() for i in x.split(',')]
                                   })
 

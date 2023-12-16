@@ -18,6 +18,7 @@ def print_config(config):
 if __name__ == "__main__":
 
     config = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
+    # config = configparser.ConfigParser()
     config.read("interpolacion_extendida.ini")
 
     print_config(config)

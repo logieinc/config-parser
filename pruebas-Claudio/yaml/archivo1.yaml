@@ -1,0 +1,32 @@
+# Objeto simple
+objeto1:
+  nombre: Juan Pérez
+  edad: 30
+  sexo: masculino
+
+# Array simple
+array1:
+  - 1
+  - 2
+  - 3
+
+# Objeto complejo
+objeto2:
+  nombre: Juan Pérez
+  edad: 30
+  sexo: masculino
+  hobbies:
+    - programación
+    - lectura
+    - deporte
+
+# Array complejo
+array2:
+  - objeto3:
+      nombre: Juan Pérez
+      edad: 30
+      sexo: masculino
+  - objeto3:
+      nombre: María López
+      edad: 25
+      sexo: femenino
