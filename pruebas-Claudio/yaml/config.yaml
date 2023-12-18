@@ -2,6 +2,7 @@ aplicacion:
   nombre: Mi aplicacion
   version: 2.0
   entorno: desarrollo
+  due_date: 2015-11-08T11:30:05.905898
 
 base:
   tipo: mysql
@@ -15,4 +16,4 @@ usuarios:
   nombre: Juan Pérez
   edad: 30
   sexo: masculino
-  hobbies: programación, lectura
+  hobbies: programación, lectura, deporte
