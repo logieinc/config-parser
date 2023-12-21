@@ -1,11 +1,11 @@
 [
   {
-    "nombre": "Juan Pérez",
+    "nombre": "Juan Perez",
     "edad": 30,
     "sexo": "masculino"
   },
   {
-    "nombre": "María López",
+    "nombre": "María Lopez",
     "edad": 25,
     "sexo": "femenino"
   }

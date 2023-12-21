@@ -1,0 +1,14 @@
+{
+  "usuario": {
+    "nombre": "Juan Pérez",
+    "edad": 30,
+    "sexo": "masculino",
+    "hobbies": ["programación", "lectura", "deporte"]
+  },
+  "productos":
+    {
+      "id": 1,
+      "nombre": "Producto 1",
+      "precio": 100
+    }
+}

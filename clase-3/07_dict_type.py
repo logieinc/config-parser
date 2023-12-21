@@ -1,5 +1,7 @@
 import itertools
 from configparser import ConfigParser
+import re
+
 
 class MiDiccionario(dict):
     def __init__(self, *args, **kwargs):
@@ -8,7 +10,8 @@ class MiDiccionario(dict):
 
     def __setitem__(self, k, v):
         print("Key =" + k + ", value=", v)
-        if k == "textsize":
+        match = re.fullmatch("textsiz[a-z]", k)
+        if match:
             n = next(self.c)
             k = k + str(n)
         super().__setitem__(k, v)
