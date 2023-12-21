@@ -29,11 +29,23 @@ print(posts)
 print(comments)
 
 headers = {}
-response = requests.get(posts, headers=headers)
+# response = requests.get(posts, headers=headers)
+response = requests.get(posts)
 
 if response.status_code == 200:
     data = response.json()
     # Imprimir el objeto JSON formateado
+    print(posts),
+    print(json.dumps(data, indent=4))
+else:
+    print(f"Error en la llamada a la API: {response.status_code}")
+
+response = requests.get(comments)
+
+if response.status_code == 200:
+    data = response.json()
+    # Imprimir el objeto JSON formateado
+    print(comments)
     print(json.dumps(data, indent=4))
 else:
     print(f"Error en la llamada a la API: {response.status_code}")
