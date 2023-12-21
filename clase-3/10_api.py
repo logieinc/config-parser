@@ -19,7 +19,7 @@ import json
 import requests
 
 config = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
-config.read("ejemplo07-api.ini")
+config.read("10_api.ni")
 
 # Call API
 posts = config.get('ENDPOINTS', 'posts')
