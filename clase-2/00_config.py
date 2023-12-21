@@ -5,9 +5,9 @@ config = configparser.ConfigParser()
 
 # Rutas de archivo de configuración
 
-default_config_path = 'default.cfg'
-site_config_path = 'site.cfg'
-user_config_path = os.path.expanduser('/ppt-clase2/Clase2-slide28/myapp.cfg')
+default_config_path = '00_default.cfg'
+site_config_path = '00_site.cfg'
+user_config_path = os.path.expanduser('/Clase2/00_myapp.cfg')
 
 with open(default_config_path, 'r', encoding='cp1250') as default_config_file:
     config.read_file(default_config_file)

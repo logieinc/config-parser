@@ -16,6 +16,6 @@ def print_config(config):
 
 configiso = configparser.ConfigParser()
 
-configiso.read("configiso.ini")
+configiso.read("00_configiso.ini")
 
 print_config(configiso)

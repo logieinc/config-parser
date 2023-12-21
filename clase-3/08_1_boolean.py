@@ -2,7 +2,7 @@ import configparser
 
 config = configparser.ConfigParser()
 
-config.read("clase2-slide5.ini")
+config.read("08_1_boolean.ini")
 
 entorno = config.get('opciones avanzadas', 'entorno')
 mostrar_logs = config.getboolean('opciones avanzadas', 'mostrar logs')
