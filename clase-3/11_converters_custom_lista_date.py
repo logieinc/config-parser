@@ -13,7 +13,7 @@ config = ConfigParser(converters={'lista': lambda x: [i.strip() for i in x.split
                                   'datetime': parse_iso_datetime,
                                   })
 
-config.read('converters_custom_lista_date.ini')
+config.read('11_converters_custom_lista_date.ini')
 
 print('Converter lista:')
 print(config.sections())
